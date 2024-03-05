@@ -8,22 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		2159C9662B96ED8100577C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9652B96ED8100577C7E /* AppDelegate.swift */; };
-		2159C9682B96ED8100577C7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9672B96ED8100577C7E /* SceneDelegate.swift */; };
 		2159C96A2B96ED8100577C7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9692B96ED8100577C7E /* ViewController.swift */; };
 		2159C96D2B96ED8100577C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2159C96B2B96ED8100577C7E /* Main.storyboard */; };
 		2159C96F2B96ED8500577C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2159C96E2B96ED8500577C7E /* Assets.xcassets */; };
 		2159C9722B96ED8500577C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2159C9702B96ED8500577C7E /* LaunchScreen.storyboard */; };
+		2159C97C2B96EDFA00577C7E /* AppDelegateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C97B2B96EDFA00577C7E /* AppDelegateBuilder.swift */; };
+		2159C97E2B96EE1200577C7E /* AppDelegateLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C97D2B96EE1200577C7E /* AppDelegateLogic.swift */; };
+		2159C9822B96EE9500577C7E /* UIStoryboard+Addons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9812B96EE9500577C7E /* UIStoryboard+Addons.swift */; };
+		2159C9942B96EF9B00577C7E /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9872B96EF9B00577C7E /* DashboardInteractor.swift */; };
+		2159C9952B96EF9B00577C7E /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9882B96EF9B00577C7E /* DashboardPresenter.swift */; };
+		2159C9962B96EF9B00577C7E /* DashboardProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9892B96EF9B00577C7E /* DashboardProtocols.swift */; };
+		2159C9972B96EF9B00577C7E /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C98A2B96EF9B00577C7E /* DashboardRouter.swift */; };
+		2159C9982B96EF9B00577C7E /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2159C98B2B96EF9B00577C7E /* DashboardViewController.xib */; };
+		2159C99B2B96EF9B00577C7E /* DashboardVCEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C98F2B96EF9B00577C7E /* DashboardVCEntity.swift */; };
+		2159C99C2B96EF9B00577C7E /* DashboardDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9902B96EF9B00577C7E /* DashboardDataSourceProtocol.swift */; };
+		2159C99D2B96EF9B00577C7E /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9912B96EF9B00577C7E /* DashboardVC.swift */; };
+		2159C9A22B96F41B00577C7E /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9A12B96F41B00577C7E /* ServiceManager.swift */; };
+		2159C9A52B96F48A00577C7E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2159C9A42B96F48A00577C7E /* Alamofire */; };
+		2159C9A82B96F4A900577C7E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2159C9A72B96F4A900577C7E /* Kingfisher */; };
+		2159C9AA2B96F4B400577C7E /* UIImageView+Addons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159C9A92B96F4B400577C7E /* UIImageView+Addons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2159C9622B96ED8100577C7E /* Pokemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2159C9652B96ED8100577C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2159C9672B96ED8100577C7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2159C9692B96ED8100577C7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2159C96C2B96ED8100577C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2159C96E2B96ED8500577C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2159C9712B96ED8500577C7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2159C9732B96ED8500577C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2159C97B2B96EDFA00577C7E /* AppDelegateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateBuilder.swift; sourceTree = "<group>"; };
+		2159C97D2B96EE1200577C7E /* AppDelegateLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateLogic.swift; sourceTree = "<group>"; };
+		2159C9812B96EE9500577C7E /* UIStoryboard+Addons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Addons.swift"; sourceTree = "<group>"; };
+		2159C9872B96EF9B00577C7E /* DashboardInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		2159C9882B96EF9B00577C7E /* DashboardPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		2159C9892B96EF9B00577C7E /* DashboardProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardProtocols.swift; sourceTree = "<group>"; };
+		2159C98A2B96EF9B00577C7E /* DashboardRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		2159C98B2B96EF9B00577C7E /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		2159C98F2B96EF9B00577C7E /* DashboardVCEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVCEntity.swift; sourceTree = "<group>"; };
+		2159C9902B96EF9B00577C7E /* DashboardDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardDataSourceProtocol.swift; sourceTree = "<group>"; };
+		2159C9912B96EF9B00577C7E /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		2159C9A12B96F41B00577C7E /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		2159C9A92B96F4B400577C7E /* UIImageView+Addons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Addons.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2159C9A82B96F4A900577C7E /* Kingfisher in Frameworks */,
+				2159C9A52B96F48A00577C7E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +84,9 @@
 		2159C9642B96ED8100577C7E /* Pokemon */ = {
 			isa = PBXGroup;
 			children = (
-				2159C9652B96ED8100577C7E /* AppDelegate.swift */,
-				2159C9672B96ED8100577C7E /* SceneDelegate.swift */,
+				2159C9A02B96F3F800577C7E /* Core */,
+				2159C97F2B96EE2800577C7E /* Common */,
+				2159C9792B96EDC200577C7E /* Scene */,
 				2159C9692B96ED8100577C7E /* ViewController.swift */,
 				2159C96B2B96ED8100577C7E /* Main.storyboard */,
 				2159C96E2B96ED8500577C7E /* Assets.xcassets */,
@@ -65,6 +94,65 @@
 				2159C9732B96ED8500577C7E /* Info.plist */,
 			);
 			path = Pokemon;
+			sourceTree = "<group>";
+		};
+		2159C9792B96EDC200577C7E /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2159C9862B96EF9B00577C7E /* Dashboard */,
+				2159C97A2B96EDC800577C7E /* Delegate */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		2159C97A2B96EDC800577C7E /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2159C9652B96ED8100577C7E /* AppDelegate.swift */,
+				2159C97B2B96EDFA00577C7E /* AppDelegateBuilder.swift */,
+				2159C97D2B96EE1200577C7E /* AppDelegateLogic.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		2159C97F2B96EE2800577C7E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2159C9802B96EE3100577C7E /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2159C9802B96EE3100577C7E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2159C9812B96EE9500577C7E /* UIStoryboard+Addons.swift */,
+				2159C9A92B96F4B400577C7E /* UIImageView+Addons.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2159C9862B96EF9B00577C7E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				2159C9872B96EF9B00577C7E /* DashboardInteractor.swift */,
+				2159C9882B96EF9B00577C7E /* DashboardPresenter.swift */,
+				2159C9892B96EF9B00577C7E /* DashboardProtocols.swift */,
+				2159C98A2B96EF9B00577C7E /* DashboardRouter.swift */,
+				2159C98B2B96EF9B00577C7E /* DashboardViewController.xib */,
+				2159C98F2B96EF9B00577C7E /* DashboardVCEntity.swift */,
+				2159C9902B96EF9B00577C7E /* DashboardDataSourceProtocol.swift */,
+				2159C9912B96EF9B00577C7E /* DashboardVC.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		2159C9A02B96F3F800577C7E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2159C9A12B96F41B00577C7E /* ServiceManager.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +171,10 @@
 			dependencies = (
 			);
 			name = Pokemon;
+			packageProductDependencies = (
+				2159C9A42B96F48A00577C7E /* Alamofire */,
+				2159C9A72B96F4A900577C7E /* Kingfisher */,
+			);
 			productName = Pokemon;
 			productReference = 2159C9622B96ED8100577C7E /* Pokemon.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +203,10 @@
 				Base,
 			);
 			mainGroup = 2159C9592B96ED8100577C7E;
+			packageReferences = (
+				2159C9A32B96F48A00577C7E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2159C9A62B96F4A900577C7E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 2159C9632B96ED8100577C7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +224,7 @@
 				2159C9722B96ED8500577C7E /* LaunchScreen.storyboard in Resources */,
 				2159C96F2B96ED8500577C7E /* Assets.xcassets in Resources */,
 				2159C96D2B96ED8100577C7E /* Main.storyboard in Resources */,
+				2159C9982B96EF9B00577C7E /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +235,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2159C9962B96EF9B00577C7E /* DashboardProtocols.swift in Sources */,
+				2159C99D2B96EF9B00577C7E /* DashboardVC.swift in Sources */,
 				2159C96A2B96ED8100577C7E /* ViewController.swift in Sources */,
+				2159C97C2B96EDFA00577C7E /* AppDelegateBuilder.swift in Sources */,
+				2159C9A22B96F41B00577C7E /* ServiceManager.swift in Sources */,
+				2159C99C2B96EF9B00577C7E /* DashboardDataSourceProtocol.swift in Sources */,
+				2159C99B2B96EF9B00577C7E /* DashboardVCEntity.swift in Sources */,
 				2159C9662B96ED8100577C7E /* AppDelegate.swift in Sources */,
-				2159C9682B96ED8100577C7E /* SceneDelegate.swift in Sources */,
+				2159C9822B96EE9500577C7E /* UIStoryboard+Addons.swift in Sources */,
+				2159C9952B96EF9B00577C7E /* DashboardPresenter.swift in Sources */,
+				2159C97E2B96EE1200577C7E /* AppDelegateLogic.swift in Sources */,
+				2159C9AA2B96F4B400577C7E /* UIImageView+Addons.swift in Sources */,
+				2159C9972B96EF9B00577C7E /* DashboardRouter.swift in Sources */,
+				2159C9942B96EF9B00577C7E /* DashboardInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +469,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2159C9A32B96F48A00577C7E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.1;
+			};
+		};
+		2159C9A62B96F4A900577C7E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2159C9A42B96F48A00577C7E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2159C9A32B96F48A00577C7E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2159C9A72B96F4A900577C7E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2159C9A62B96F4A900577C7E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2159C95A2B96ED8100577C7E /* Project object */;
 }

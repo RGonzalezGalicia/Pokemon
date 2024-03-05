@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Pokemon
 //
-//  Created by Hernandez Peralta, Javier Alejandro on 05/03/24.
+//  Created by Hernandez Peralta, Ricardo Gonzalez on 05/03/24.
 //
 
 import UIKit

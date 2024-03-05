@@ -1,8 +1,7 @@
 //
 //  DashboardRouter.swift
-//  QuestionTest
 //
-//  Created by Ricardo Gonzalez on 28/08/23.
+//  Created by Ricardo Gonzalez on 05/03/24.
 //
 
 import UIKit
@@ -33,8 +32,5 @@ class DashboardRouter {
 }
 
 extension DashboardRouter: PresenterToRouterDashboardProtocol  {
-    func nextView(_ item: [itemDashboard]) {
-        let nextVC = DetailSelectRouter.createModule(itemsSelect: item)
-        self.viewController?.present(nextVC, animated: true)
-    }
+
 }

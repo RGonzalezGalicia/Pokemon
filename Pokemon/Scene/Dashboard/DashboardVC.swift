@@ -1,51 +1,43 @@
 //
 //  DashboardVC.swift
-//  QuestionTest
 //
 //  Created by Ricardo Gonzalez on 28/08/23.
 //
 import UIKit
 import Foundation
 
-
 class DashboardVC: UIViewController {
     
-    var items = [itemDashboard(title: "Camara", checkbox: false),
-                 itemDashboard(title: "Foto", checkbox: false),
-                 itemDashboard(title: "Nombre Completo", checkbox: false),
-                 itemDashboard(title: "Numero Telefonico", checkbox: false),
-                 itemDashboard(title: "Fecha de nacimiento", checkbox: false),
-                 itemDashboard(title: "Sexo", checkbox: false),
-                 itemDashboard(title: "Color Favorito", checkbox: false)]
+    @IBOutlet weak var headerImg: UIImageView!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var heightLbl: UILabel!
+    @IBOutlet weak var weightLbl: UILabel!
     
-    @IBOutlet weak var tableView: UITableView!
+    
+   
+    
+    var tags = [TypeElement]()
+    
+    
     // MARK: - Lifecycle Methods
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Second Call the services
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.registerCellWith(identifier: DashboardViewCell.identifier)
+       
+        presenter?.getPokemon()
+        let timer = Timer.scheduledTimer(timeInterval: 30.0, target: self, selector: #selector(nextPokemon), userInfo: nil, repeats: true)
+        
     }
     
+    @objc func nextPokemon() {
+        presenter?.getPokemon()
+    }
+    
+    
     @IBAction func continueAction(_ sender: Any) {
-        if items.firstIndex(where: {$0.checkbox == true}) != nil {
-            var a = [itemDashboard]()
-            for i in items {
-                if i.checkbox == true {
-                    a.append(i)
-                }
-            }
-
-            presenter?.nextView(a)
-        }else{
-            let dialogMessage = UIAlertController(title: "Alerta", message: "Selecciona al menos un item para continuar", preferredStyle: .alert)
-            let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in })
-            dialogMessage.addAction(ok)
-            self.present(dialogMessage, animated: true, completion: nil)
-        }
+        presenter?.getPokemon()
     }
     
     public static func initWithNibName() -> DashboardVC {
@@ -60,12 +52,12 @@ class DashboardVC: UIViewController {
 
 extension DashboardVC: PresenterToViewDashboardProtocol{
     // TODO: Implement View Output Methods
-}
-
-extension DashboardVC: ItemSelectDelegate {
-    func onSelectedItem(item: itemDashboard) {
-        if let row = self.items.firstIndex(where: {$0.title == item.title}) {
-               items[row] = item
-        }
+    
+    func showDetailPokemon(item: Pokemon) {
+        headerImg.imageFromServerURL(urlString: item.sprites.other?.officialArtwork?.frontDefault ?? "")
+        nameLbl.text = item.name.uppercased()
+        heightLbl.text = "\(item.height)"
+        weightLbl.text = "\(item.weight)"
+        
     }
 }
