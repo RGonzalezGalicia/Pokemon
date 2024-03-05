@@ -2,7 +2,7 @@
 //  AppDelegateBuilder.swift
 //  Pokemon
 //
-//  Created by Hernandez Peralta, Ricardo Gonzalez on 05/03/24.
+//  Created by Ricardo Gonzalez on 05/03/24.
 //
 
 import UIKit
